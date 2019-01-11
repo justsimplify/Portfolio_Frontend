@@ -1,0 +1,71 @@
+html,
+body {
+    margin: 0px !important;
+    padding: 0px !important;
+    background: #eee;
+}
+
+.no-margin {
+    margin: 0px !important;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.margin-8px {
+    margin: 8px 0px 8px 0px !important;
+}
+
+.padding-8px {
+    padding: 8px 8px 8px 8px !important;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.collegeName {
+    font-size: 2vh;
+}
+
+.sectionTitle {
+    font-size: 3vh;
+}
+
+.waves-effect.waves-rebeccapurple .waves-ripple {
+    /* The alpha value allows the text and background color
+    of the button to still show through. */
+    background-color: rebeccapurple;
+}
+
+.preloader-wrapper {
+    margin-bottom: 30px;
+}
+
+.pName {
+    font-size: 30px;
+}
+
+.headerRow {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    background: #FFFFFF;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+.fa-network-wired path, .fa-project-diagram path, .fa-code-branch path, .fa-university path {
+    fill: transparent;
+    stroke: black;
+    stroke-width: 20px;
+}
