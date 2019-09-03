@@ -20,7 +20,7 @@ AjaxRequestBuilder("projects").subscribe(ajaxResponse => {
     let result = ajaxResponse.response as Array<Project>
     result.forEach(element => {
         hideProgess(".projectLoader", function () {
-            $(".projectCard").append(returnTemplateString(element.projectName, element.techStack.join(", "), element.projectDescription));
+            $(".projectCard").append(returnTemplateString(element.projectName, element.techStack.join(", "), element.projectDescription.split("\n").join("<br><br>")));
         });
     });
     initCollapsible('.projectCard')
@@ -31,7 +31,7 @@ AjaxRequestBuilder("experience").subscribe(ajaxResponse => {
     let result = ajaxResponse.response as Array<Experience>
     result.forEach(element => {
         hideProgess(".expLoader", function () {
-            $(".expCard").append(returnTemplateString(element.companyName, `${element.fromDate} - ${element.toDate}`, element.description.join("<br>")))
+            $(".expCard").append(returnTemplateString(element.companyName, `${element.fromDate} - ${element.toDate}`, element.description.join("<br><br>")))
         });
     });
     initCollapsible('.expCard')
